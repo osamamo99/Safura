@@ -109,5 +109,19 @@ Is liye pehly hi kar rahy hay apko
     <div class="balloon"></div>
     <div class="balloon"></div>
   </div>
+
+    <!-- Happy Birthday Song -->
+  <audio id="birthdaySong" autoplay>
+    <source src="https://drive.google.com/uc?export=download&id=1p6Dk_p9XJCAII68_AWfZzkFQ8maRHiRb" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Automatically play the song
+    const song = document.getElementById('birthdaySong');
+    song.play().catch(error => {
+      console.log("Autoplay blocked. User interaction needed.");
+    });
+  </script>
 </body>
 </html>
